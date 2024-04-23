@@ -1,21 +1,16 @@
 import { useState } from "react"
-import Dropdown from "./Dropdown"
 
-interface NavItemProps {
-    title: String
-}
-
-export default function NavItem({title}: NavItemProps) {
-
+export default function DropdownItem({children, onClick}: any) {
+    
     const [isHovering, setIsHovering] = useState<Boolean>(false)
 
     return (
-        <div 
+        <li 
+            onClick={onClick}
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             className={`${isHovering ? 'hoveredNavItem' : ''}`}>
-                <h4 className={`navItem`}>{title}</h4>
-            {isHovering && <Dropdown dropdownFor={title}/>}
-        </div>
+                {children}
+        </li>
     )
 }

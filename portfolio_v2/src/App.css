@@ -25,6 +25,25 @@ nav {
   color: #d9d9d9;
 }
 
+.dropdownMenu {
+  position: absolute;
+  background-color: #d9d9d9;
+  color: black;
+  padding: 0;
+  border: 3px solid black;
+}
+
+.dropdownMenu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.dropdownMenu ul li {
+  padding: 0.2em 0.2em;
+  margin: 0;
+}
+
 /* FONTS */
 
 .vt323-regular {
