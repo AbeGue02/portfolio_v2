@@ -1,0 +1,46 @@
+
+/* COMPONENTS */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #d9d9d9;
+  padding: 0 1em;
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  border-bottom: 3px solid black;
+}
+
+.navItem {
+  padding: 0.5em 1em;
+  margin: 0;
+}
+
+.hoveredNavItem {
+  background-color: black;
+  color: #d9d9d9;
+}
+
+/* FONTS */
+
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geo-regular {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geo-regular-italic {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
