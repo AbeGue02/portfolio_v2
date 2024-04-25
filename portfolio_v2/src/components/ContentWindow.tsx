@@ -25,7 +25,7 @@ export default function ContentWindow() {
                         navigate('/')
                     }}/>
             </div>
-            <main>
+            <main className="overflow-scroll">
                 <Routes>
                     <Route path="/"/>
                     <Route path='/about'/>
