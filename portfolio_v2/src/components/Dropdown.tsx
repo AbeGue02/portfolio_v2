@@ -29,15 +29,15 @@ export default function Dropdown({dropdownFor}: DropdownProps) {
                 <>
                     <DropdownItem onClick={() => handleNavigate('/about/me', 'Who am I?')}>Who am I?</DropdownItem>
                     <DropdownItem onClick={() => handleNavigate('/about/earlylife', 'Early Life')}>Early Life</DropdownItem>
-                    <DropdownItem onClick={() => handleNavigate('/about/hobbies', 'Hobbies')}>Hobbies</DropdownItem>
+                    {/* <DropdownItem onClick={() => handleNavigate('/about/hobbies', 'Hobbies')}>Hobbies</DropdownItem> */}
                 </>
             )
             break
         case 'Work':
             dropdownMenuContent = (
                 <>
-                    <DropdownItem>All Projects</DropdownItem>
-                    <DropdownItem>Skills</DropdownItem>
+                    <DropdownItem onClick={() => handleNavigate('/work/all', 'Projects')}>All Projects</DropdownItem>
+                    <DropdownItem onClick={() => handleNavigate('/work/skills', 'Skills')}>Skills</DropdownItem>
                 </>
             )
             break

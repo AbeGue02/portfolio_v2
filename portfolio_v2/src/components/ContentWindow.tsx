@@ -4,6 +4,8 @@ import { Route, Routes, useNavigate } from "react-router-dom"
 import AboutMe from "../routes/AboutMe"
 import EarlyLife from "../routes/EarlyLife"
 import Hobbies from "../routes/Hobbies"
+import ProjectList from "../routes/ProjectList"
+import SkillsList from "../routes/SkillsList"
 
 export default function ContentWindow() {
     
@@ -32,9 +34,9 @@ export default function ContentWindow() {
                     <Route path='/about/me' element={<AboutMe/>}/>
                     <Route path='/about/earlylife' element={<EarlyLife/>}/>
                     <Route path='/about/hobbies' element={<Hobbies/>}/>
-                    <Route path='/work/all'/>
+                    <Route path='/work/all' element={<ProjectList/>}/>
                     <Route path='/work/all/:projectId'/>
-                    <Route path='/work/skills'/>
+                    <Route path='/work/skills' element={<SkillsList/>}/>
                 </Routes>
             </main>
         </div>
