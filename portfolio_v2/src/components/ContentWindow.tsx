@@ -35,7 +35,7 @@ export default function ContentWindow() {
                     <Route path='/about/earlylife' element={<EarlyLife/>}/>
                     <Route path='/about/hobbies' element={<Hobbies/>}/>
                     <Route path='/work/all' element={<ProjectList/>}/>
-                    <Route path='/work/all/:projectId'/>
+                    <Route path='/work/:projectId'/>
                     <Route path='/work/skills' element={<SkillsList/>}/>
                 </Routes>
             </main>

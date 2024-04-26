@@ -3,10 +3,11 @@ import WindowContext from "../context"
 
 export default function AboutMe() {
     
-    const { setWindowState } = useContext(WindowContext)!
+    const { windowState, setWindowState } = useContext(WindowContext)!
     
     useEffect(() => {
         setWindowState({
+            ...windowState,
             isVisible: true,
             title: "Who am I?"
         })
