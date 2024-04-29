@@ -6,6 +6,7 @@ import EarlyLife from "../routes/EarlyLife"
 import Hobbies from "../routes/Hobbies"
 import ProjectList from "../routes/ProjectList"
 import SkillsList from "../routes/SkillsList"
+import ProjectDetails from "../routes/ProjectDetails"
 
 export default function ContentWindow() {
     
@@ -35,7 +36,7 @@ export default function ContentWindow() {
                     <Route path='/about/earlylife' element={<EarlyLife/>}/>
                     <Route path='/about/hobbies' element={<Hobbies/>}/>
                     <Route path='/work/all' element={<ProjectList/>}/>
-                    <Route path='/work/:projectId'/>
+                    <Route path='/work/:projectId' element={<ProjectDetails/>}/>
                     <Route path='/work/skills' element={<SkillsList/>}/>
                 </Routes>
             </main>

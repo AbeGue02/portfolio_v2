@@ -1,14 +1,21 @@
 import { Project } from "../interfaces";
-import { react, reactNative } from "./skills";
+import { css, expo, expressjs, html, javaScript, mongodb, nodejs, react, reactNative } from "./skills";
 
 const projects: Project[] = [
     {
         id: 0,
         title: "Bloom Habit Tracker",
         category: "Mobile",
-        description: "React Native Habit Tracker",
+        pictures: [
+            'https://github.com/AbeGue02/bloom/raw/main/assets/loginScreen.jpeg',
+            'https://github.com/AbeGue02/bloom/raw/main/assets/homeScreen.jpeg',
+            'https://github.com/AbeGue02/bloom/raw/main/assets/profileScreen.jpeg'
+        ],
+        description: `
+            Bloom represents an innovative approach to habit tracking, harnessing the power of React Native technology to provide users with a comprehensive platform for monitoring their daily routines. By seamlessly integrating habit tracking with virtual plant cultivation, Bloom offers a unique and engaging experience designed to facilitate personal growth and development. Through its intuitive interface and robust feature set, Bloom empowers users to cultivate positive habits while nurturing virtual flora. At the heart of Bloom lies its sophisticated scoring system, meticulously crafted to incentivize and reward users for their habit completion. This system not only tracks users' progress but also encourages consistent engagement by offering tangible rewards in the form of plant growth within their profile. By gamifying the habit-tracking process, Bloom fosters a sense of achievement and motivation, motivating users to stay committed to their goals.
+        `,
         skills: [
-            reactNative
+            reactNative, expressjs, mongodb, nodejs, javaScript, expo
         ],
         githubLink: 'https://github.com/AbeGue02/bloom',
         backendLink: 'https://github.com/AbeGue02/bloom-back-end'
@@ -19,7 +26,7 @@ const projects: Project[] = [
         category: "Web",
         description: "React social media platform for artists.",
         skills: [
-            react
+            react, expressjs, mongodb, nodejs, css, html, javaScript
         ],
         githubLink: 'https://github.com/AbeGue02/splash'
     },
@@ -29,7 +36,7 @@ const projects: Project[] = [
         category: "Web",
         description: `Have you ever played the classic game of PONG? PONG is one of the most classic video game out there. Although it has a basic design, it is as addictive as games can get. It was created in 1972 by Atari founder Nolan Bushnell. Although the charm of PONG is its simplicity, there are ways to keep the game simple while also adding some spice to it. This game is much faster than the original PONG, and you can chose whether you want to play by yourself, or against the computer. Either way, the game is endlessly fun!`,
         skills: [
-            react
+            html, javaScript, css, nodejs
         ],
         githubLink: 'https://github.com/AbeGue02/splash'
     },

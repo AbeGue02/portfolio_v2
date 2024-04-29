@@ -19,12 +19,29 @@ function App() {
     <WindowContext.Provider value={{ windowState, setWindowState }}>
       <TopBar/>
       <div className='contentContainer'>
+        
         {
           windowState.isVisible && <ContentWindow/>
         }
+
         <DocumentItem
-          title='About me'
-          onClick={() => {navigate('/about/me')}}/>
+          title='Who Am I?'
+          onClick={() => {
+            setWindowState({
+              ...windowState,
+              isVisible: true
+            })
+            navigate('/about/me')
+          }}/>
+        <DocumentItem
+          title='Projects'
+          onClick={() => {
+            setWindowState({
+              ...windowState,
+              isVisible: true
+            })
+            navigate('/work/all')
+          }}/>
       </div>
     </WindowContext.Provider>
   )

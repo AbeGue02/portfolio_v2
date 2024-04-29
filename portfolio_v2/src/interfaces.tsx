@@ -1,6 +1,6 @@
 export interface ContentWindowInterface {
     isVisible: Boolean
-    title: String
+    title: String | string
 }
 
 export interface ContentWindowContext {
@@ -18,8 +18,14 @@ export interface Project {
     title: string
     category: string
     description: string
+    pictures?: string[]
     skills?: Skill[]
     icon?: string
     githubLink: string
     backendLink?: string
+}
+
+export interface PictureModalInterface {
+    isShowing: boolean
+    pictureURL: string
 }

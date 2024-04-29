@@ -16,7 +16,7 @@ export default function AboutMe() {
     return (
         <div className="container flex flex-col p-4 vt323-regular">
             <h1 className="text-[3em]">Abraham Guerrero</h1>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-col items-center md:flex-row">
                 <img 
                     className="object-cover aspect-square size-1/3"
                     src="https://i.imgur.com/JBKdtT1.jpg"/>
