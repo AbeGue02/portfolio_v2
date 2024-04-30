@@ -24,9 +24,14 @@ const projects: Project[] = [
         id: 1,
         title: "Splash",
         category: "Web",
-        description: "React social media platform for artists.",
+        description: "Splash is an social media platform for artists and people seeking some relaxing time for their mental wellbeing. It is the ideal place for those seeking inspiration and/or relaxation. Come and chill with us.",
         skills: [
             react, expressjs, mongodb, nodejs, css, html, javaScript
+        ],
+        pictures: [
+            'https://github.com/AbeGue02/splash/raw/main/imgs/feed-screen.png',
+            'https://github.com/AbeGue02/splash/raw/main/imgs/user-screens.png',
+            'https://github.com/AbeGue02/splash/raw/main/imgs/edit-user-screen.png'
         ],
         githubLink: 'https://github.com/AbeGue02/splash'
     },
@@ -38,7 +43,11 @@ const projects: Project[] = [
         skills: [
             html, javaScript, css, nodejs
         ],
-        githubLink: 'https://github.com/AbeGue02/splash'
+        pictures: [
+            'https://i.imgur.com/nbzIgQH.png'
+        ],
+        githubLink: 'https://github.com/AbeGue02/pong',
+        deployedLink: 'https://abrahamguerrero-pong.surge.sh/'
     },
 ]
 

@@ -42,6 +42,12 @@ function App() {
             })
             navigate('/work/all')
           }}/>
+        <DocumentItem
+          title='Portfolio'
+          icon='https://static-00.iconduck.com/assets.00/github-icon-2048x2048-4uclrgic.png'
+          onClick={() => {
+            window.open('https://github.com/AbeGue02/portfolio_v2')
+          }}/>
       </div>
     </WindowContext.Provider>
   )

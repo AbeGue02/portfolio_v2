@@ -32,12 +32,31 @@ export default function ProjectDetails() {
             {
                 modalState.isShowing && <PictureModal setModal={setModalState} pictureURL={modalState.pictureURL}/>
             }
-            <div className="flex flex-row flex-wrap max-h-fit mb-2 justify-between">
+            <div className="flex flex-row flex-wrap max-h-fit justify-between">
                 <h1 className="text-5xl">{currentProject?.title}</h1>
-                <img 
-                    className="aspect-square h-10 cursor-pointer"
-                    src={'https://static-00.iconduck.com/assets.00/github-icon-2048x2048-4uclrgic.png'}
-                    onClick={() => window.open(currentProject?.githubLink)}/>
+
+                <div className="flex flex-row gap-1 items-center">
+                    <img 
+                        className="aspect-square h-10 cursor-pointer"
+                        src={'https://static-00.iconduck.com/assets.00/github-icon-2048x2048-4uclrgic.png'}
+                        onClick={() => window.open(currentProject?.githubLink)}/>
+                    {
+                        currentProject?.backendLink && (
+                            <img 
+                                className="aspect-square h-10 cursor-pointer"
+                                src={'https://static-00.iconduck.com/assets.00/github-icon-2048x2048-4uclrgic.png'}
+                                onClick={() => window.open(currentProject?.backendLink)}/>
+                        )
+                    }
+                    {
+                        currentProject?.deployedLink && (
+                            <img 
+                                className="aspect-square h-10 cursor-pointer"
+                                src={'https://cdn1.iconfinder.com/data/icons/pixel-art-2/100/pixel_icons-43-512.png'}
+                                onClick={() => window.open(currentProject?.deployedLink)}/>
+                        )
+                    }
+                </div>
             </div>
             <div className="flex flex-row flex-wrap overflow-scroll">
                 {

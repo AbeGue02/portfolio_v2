@@ -29,7 +29,6 @@ export default function Dropdown({dropdownFor}: DropdownProps) {
                 <>
                     <DropdownItem onClick={() => handleNavigate('/about/me', 'Who am I?')}>Who am I?</DropdownItem>
                     <DropdownItem onClick={() => handleNavigate('/about/earlylife', 'Early Life')}>Early Life</DropdownItem>
-                    {/* <DropdownItem onClick={() => handleNavigate('/about/hobbies', 'Hobbies')}>Hobbies</DropdownItem> */}
                 </>
             )
             break
@@ -46,6 +45,7 @@ export default function Dropdown({dropdownFor}: DropdownProps) {
                 <>
                     <DropdownItem>Web Developer Resume</DropdownItem>
                     <DropdownItem>Mobile App Dev Resume</DropdownItem>
+                    <DropdownItem onClick={() => window.open('https://docs.google.com/document/d/1mMujTkn2RGJhWOUQtdi9FE5yXKU_3H_xnVHO-Jb1H9Y/edit?usp=sharing')}>Software Engineer Resume</DropdownItem>
                 </>
             )
             break

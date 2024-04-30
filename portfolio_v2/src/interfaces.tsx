@@ -23,6 +23,8 @@ export interface Project {
     icon?: string
     githubLink: string
     backendLink?: string
+    deployedLink?: string
+    expoSnackLink?: string
 }
 
 export interface PictureModalInterface {
