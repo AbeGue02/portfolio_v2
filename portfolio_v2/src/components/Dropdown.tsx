@@ -43,8 +43,8 @@ export default function Dropdown({dropdownFor}: DropdownProps) {
         case 'Documents':
             dropdownMenuContent = (
                 <>
-                    <DropdownItem>Web Developer Resume</DropdownItem>
-                    <DropdownItem>Mobile App Dev Resume</DropdownItem>
+                    {/* <DropdownItem>Web Developer Resume</DropdownItem>
+                    <DropdownItem>Mobile App Dev Resume</DropdownItem> */}
                     <DropdownItem onClick={() => window.open('https://docs.google.com/document/d/1mMujTkn2RGJhWOUQtdi9FE5yXKU_3H_xnVHO-Jb1H9Y/edit?usp=sharing')}>Software Engineer Resume</DropdownItem>
                 </>
             )
@@ -52,7 +52,7 @@ export default function Dropdown({dropdownFor}: DropdownProps) {
         case 'Socials':
             dropdownMenuContent = (
                 <>
-                    <DropdownItem onClick={() => {window.open('https://www.linkedin.com/in/abrahamdguerrero/')}}>LinkedIn</DropdownItem>
+                    <DropdownItem onClick={() => window.open('https://www.linkedin.com/in/abrahamdguerrero/')}>LinkedIn</DropdownItem>
                     <DropdownItem onClick={() => window.open('https://github.com/AbeGue02')}>Github</DropdownItem>
                 </>
             )
@@ -61,7 +61,7 @@ export default function Dropdown({dropdownFor}: DropdownProps) {
             dropdownMenuContent = (
                 <>
                     <DropdownItem onClick={() => window.open('https://calendly.com/abrahamgue02')}>Calendly</DropdownItem>
-                    <DropdownItem>Email</DropdownItem>
+                    {/* <DropdownItem>Email</DropdownItem> */}
                 </>
             )
             break

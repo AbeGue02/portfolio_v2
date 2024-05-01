@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 
 function App() {
   const [windowState, setWindowState] = useState<ContentWindowInterface>({
-    isVisible: true,
+    isVisible: false,
     title: 'None'
   })
 
@@ -23,31 +23,32 @@ function App() {
         {
           windowState.isVisible && <ContentWindow/>
         }
-
-        <DocumentItem
-          title='Who Am I?'
-          onClick={() => {
-            setWindowState({
-              ...windowState,
-              isVisible: true
-            })
-            navigate('/about/me')
-          }}/>
-        <DocumentItem
-          title='Projects'
-          onClick={() => {
-            setWindowState({
-              ...windowState,
-              isVisible: true
-            })
-            navigate('/work/all')
-          }}/>
-        <DocumentItem
-          title='Portfolio'
-          icon='https://static-00.iconduck.com/assets.00/github-icon-2048x2048-4uclrgic.png'
-          onClick={() => {
-            window.open('https://github.com/AbeGue02/portfolio_v2')
-          }}/>
+        <div className={windowState.isVisible ? "hidden" : ""}>
+          <DocumentItem
+            title='Who Am I?'
+            onClick={() => {
+              setWindowState({
+                ...windowState,
+                isVisible: true
+              })
+              navigate('/about/me')
+            }}/>
+          <DocumentItem
+            title='Projects'
+            onClick={() => {
+              setWindowState({
+                ...windowState,
+                isVisible: true
+              })
+              navigate('/work/all')
+            }}/>
+          <DocumentItem
+            title='Portfolio'
+            icon='https://static-00.iconduck.com/assets.00/github-icon-2048x2048-4uclrgic.png'
+            onClick={() => {
+              window.open('https://github.com/AbeGue02/portfolio_v2')
+            }}/>
+        </div>
       </div>
     </WindowContext.Provider>
   )

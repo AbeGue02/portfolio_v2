@@ -12,6 +12,10 @@ export const javaScript: Skill = {
     name: 'JavaScript',
     icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png'
 }
+export const typeScript: Skill = {
+    name: 'TypeScript',
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png'
+}
 export const css: Skill = {
     name: 'CSS',
     icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'
@@ -61,5 +65,5 @@ export const expo: Skill = {
 }
 
 export const allSkills: Skill[] = [
-    react,reactNative,javaScript,css,html,unity,django,mongodb,expressjs,python,tailwind,nodejs,github,sql,expo
+    react,reactNative,javaScript,typeScript,css,html,unity,django,mongodb,expressjs,python,tailwind,nodejs,github,sql,expo
 ]

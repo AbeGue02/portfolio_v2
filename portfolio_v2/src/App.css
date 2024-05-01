@@ -136,3 +136,31 @@ nav {
   font-style: italic;
 }
 
+@media screen and (max-width: 650px) {
+  nav {
+    overflow: scroll;
+    padding: 0;
+    border: 3px solid black;
+  }
+
+  .navItem {
+    padding: 0.2em 0.5em;
+    white-space: nowrap;
+  }
+
+  .dropdownMenu {
+    left: 0;
+  }
+
+  .contentWindow {
+    position: static;
+    height: 100%;
+    width: 100%;
+    border-top: 0;
+  }
+
+  .contentWindowHeader {
+    padding: 0;
+    padding-right: 0.5em;
+  }
+}
