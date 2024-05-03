@@ -6,20 +6,12 @@ interface DocumentItemProps {
     icon?: string
 }
 
-export default function DocumentItem({title, onClick, icon = 'https://i.imgur.com/rnLPbUQ.png'}: DocumentItemProps) {
-    
-    const [isClicked, setIsClicked] = useState(false)
-    
-    
+export default function DocumentItem({title, onClick, icon = 'https://i.imgur.com/rnLPbUQ.png'}: DocumentItemProps) {    
 
     return (
         <div 
             className="w-24 flex flex-col items-center m-2" 
-            style={{backgroundColor: isClicked ? '#afafaf' : 'transparent'}}
-            onClick={(e) => {
-                isClicked && onClick(e)
-                setIsClicked(!isClicked)
-            }}>
+            onClick={onClick}>
             <img 
                 className="w-fit aspect-square object-contain"
                 src={icon} />

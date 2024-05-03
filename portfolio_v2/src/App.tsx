@@ -23,7 +23,7 @@ function App() {
         {
           windowState.isVisible && <ContentWindow/>
         }
-        <div className={windowState.isVisible ? "hidden" : ""}>
+        <div className={windowState.isVisible ? "hidden md:block" : ""}>
           <DocumentItem
             title='Who Am I?'
             onClick={() => {
