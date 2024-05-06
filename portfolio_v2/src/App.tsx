@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 
 function App() {
   const [windowState, setWindowState] = useState<ContentWindowInterface>({
-    isVisible: false,
+    isVisible: true,
     title: 'None'
   })
 
@@ -47,6 +47,15 @@ function App() {
             icon='https://static-00.iconduck.com/assets.00/github-icon-2048x2048-4uclrgic.png'
             onClick={() => {
               window.open('https://github.com/AbeGue02/portfolio_v2')
+            }}/>
+          <DocumentItem
+            title='Welcome'
+            onClick={() => {
+              setWindowState({
+                ...windowState,
+                isVisible: true
+              })
+              navigate('/')
             }}/>
         </div>
       </div>
