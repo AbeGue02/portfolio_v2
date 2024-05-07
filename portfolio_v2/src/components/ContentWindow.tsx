@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import WindowContext from "../context"
-import { Route, Routes, useNavigate } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import AboutMe from "../routes/AboutMe"
 import EarlyLife from "../routes/EarlyLife"
 import Hobbies from "../routes/Hobbies"
