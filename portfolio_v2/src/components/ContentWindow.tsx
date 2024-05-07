@@ -7,12 +7,11 @@ import Hobbies from "../routes/Hobbies"
 import ProjectList from "../routes/ProjectList"
 import SkillsList from "../routes/SkillsList"
 import ProjectDetails from "../routes/ProjectDetails"
+import Welcome from "../routes/Welcome"
 
 export default function ContentWindow() {
     
     const { windowState, setWindowState } = useContext(WindowContext)!
-
-    let navigate = useNavigate()
     
     return (
         <div className="contentWindow">
@@ -22,15 +21,14 @@ export default function ContentWindow() {
                     className="closeWindowButton"
                     onClick={() => {
                         setWindowState({
-                            title: '',
+                            ...windowState,
                             isVisible: false
                         })
-                        navigate('/')
                     }}/>
             </div>
             <main className="overflow-scroll">
                 <Routes>
-                    <Route path="/"/>
+                    <Route path="/" element={<Welcome/>}/>
                     <Route path='/about'/>
                     <Route path='/about/me' element={<AboutMe/>}/>
                     <Route path='/about/earlylife' element={<EarlyLife/>}/>

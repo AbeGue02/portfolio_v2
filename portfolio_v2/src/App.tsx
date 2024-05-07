@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 
 function App() {
   const [windowState, setWindowState] = useState<ContentWindowInterface>({
-    isVisible: false,
+    isVisible: true,
     title: 'None'
   })
 
@@ -23,7 +23,16 @@ function App() {
         {
           windowState.isVisible && <ContentWindow/>
         }
-        <div className={windowState.isVisible ? "hidden" : ""}>
+        <div className={windowState.isVisible ? "hidden md:block" : ""}>
+          <DocumentItem
+            title='Welcome'
+            onClick={() => {
+              setWindowState({
+                ...windowState,
+                isVisible: true
+              })
+              navigate('/')
+            }}/>
           <DocumentItem
             title='Who Am I?'
             onClick={() => {

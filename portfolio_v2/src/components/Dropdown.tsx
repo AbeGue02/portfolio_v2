@@ -61,7 +61,7 @@ export default function Dropdown({dropdownFor}: DropdownProps) {
             dropdownMenuContent = (
                 <>
                     <DropdownItem onClick={() => window.open('https://calendly.com/abrahamgue02')}>Calendly</DropdownItem>
-                    {/* <DropdownItem>Email</DropdownItem> */}
+                    <DropdownItem onClick={() => window.open('mailto:abrahamgue02@gmail.com')}>Email</DropdownItem>
                 </>
             )
             break
